@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <img width="100" src="https://doublevpartners.com/wp-content/uploads/2023/05/DVP-01-Principal-Fondo-Oscuro.png"  alt="" class="m-auto" >
+</mat-toolbar>
+<div class="fondoHome">
+  <div class="container">  
+    <h2 class="pt-5" style="color: #FFFFFF; text-align: center;">Bienvenido a <strong style="color: #3BB3FF">Double V Partners.</strong></h2>
+    <p class="textHomeSpan">¿Que desea realizar?</p>
+  </div>
+
+  <div *ngIf="!isAddPerson && !isAddUser" class="container text-center mt-5">
+    <div class="row">
+      <div class="col-6">
+        <button mat-fab extended class="btn btn-success btn-md rounded-0" (click)="intoComponent('person')">
+          <i class="fa-solid fa-person-circle-plus"></i>
+          Agregar Personas
+        </button>
+      </div>
+      <div class="col-6">
+        <button mat-fab extended class="btn btn-success btn-md rounded-0" (click)="intoComponent('user')">
+          <i class="fa-solid fa-user-plus"></i>
+          Agregar Usuarios
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <app-AddPerson *ngIf="isAddPerson" (exitComponentEmitter)="exitComponent($event)"></app-AddPerson>
+  <app-AddUser *ngIf="isAddUser" (exitComponentEmitter)="exitComponent($event)"></app-AddUser>
+</div>

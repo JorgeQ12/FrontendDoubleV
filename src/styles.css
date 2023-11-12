@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+/* styles.css o styles.scss */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+html, body { height: 100%; background-color: #000000; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #fff; }
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+button.btn-success{
+    background-color: #13653f!important;
+}
+button.btn-success:hover, button.btn-danger:hover{
+    background-color: #3BB3FF!important;
+}
+button.btn-danger{
+    background-color: red !important;
+}
+input.classInput{
+    background: #000000;
+    border-radius: 1em;
+    border: 1px solid #3BB3FF;
+    color: #3BB3FF;
+    height: 3em;
+    padding: 1em;
+}
+
+select.classSelect{
+    background: #000000;
+    border-radius: 1em;
+    border: 1px solid #3BB3FF;
+    color: #3BB3FF;
+    height: 3.5em;
+    padding: 1em;
+}

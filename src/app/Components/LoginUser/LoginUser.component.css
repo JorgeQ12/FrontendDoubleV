@@ -1,0 +1,40 @@
+.fondoLogin{
+    background-image: linear-gradient(90deg, #000000 55%, #3BB3FF 100%);
+    width: 100%;
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+input.classInput{
+    background: #000000;
+    border-radius: 1em;
+    border: 1px solid #3BB3FF;
+    color: #3BB3FF;
+    height: 3em;
+    padding: 1em;
+}
+.classFormLogin{
+    color: white;
+}
+.classButtonLogin{
+    width: 10em;
+    height: 3em;
+    background: #3BB3FF;
+    border-radius: 1em;
+    border: 0px;
+}
+
+  
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; 
+}
