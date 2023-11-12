@@ -10,7 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 @Component({
   selector: 'app-AddPerson',
   templateUrl: './AddPerson.component.html',
-  styleUrls: ['./AddPerson.component.css']
+  styleUrls: ['./AddPerson.component.css'] 
 })
 export class AddPersonComponent implements OnInit {
   @Output() exitComponentEmitter = new EventEmitter<any>();
