@@ -1,22 +1,22 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { UsuarioDTO } from 'src/app/class/usuarioDTO';
-import { ResultResponse } from 'src/app/interfaces/resultresponse';
-import { Usuario } from 'src/app/interfaces/usuario';
-import { AddUserService } from './services/adduser.service';
+import { UsuarioDTO } from 'src/app/Class/UsuarioDTO';
+import { ResultResponse } from 'src/app/Interfaces/ResultResponse';
+import { Usuario } from 'src/app/Interfaces/Usuario';
+import { AddUserServiceService } from './Services/AddUserService.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-adduser',
-  templateUrl: './adduser.component.html',
-  styleUrls: ['./adduser.component.css']
+  selector: 'app-AddUser',
+  templateUrl: './AddUser.component.html',
+  styleUrls: ['./AddUser.component.css']
 })
 export class AddUserComponent implements OnInit {
   @Output() exitComponentEmitter = new EventEmitter<any>();
   saveDataUser!: FormGroup;
   dataUser: UsuarioDTO = { NombreUsuarioDTO: '', ContraseñaDTO: '' };
 
-  constructor(private formBuilder: FormBuilder,  private AddUserService: AddUserService,  private _snackBar: MatSnackBar) { }
+  constructor(private formBuilder: FormBuilder,  private AddUserService: AddUserServiceService,  private _snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.validatorsForms();

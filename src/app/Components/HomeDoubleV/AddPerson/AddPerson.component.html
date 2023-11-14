@@ -6,7 +6,7 @@
         <div class="row">
           <div class="form-group mt-4 col-6">
             <label for="nombres" class="classFormLogin mb-1" >Nombres:</label>
-            <input type="text" id="nombres" formControlName="nombres" placeholder="Ingrese su nombre*" class="classInput" required/>
+            <input type="text" id="nombres" formControlName="nombres" placeholder="Ingrese su nombre" class="classInput" required/>
             <div *ngIf="saveDataForm.get('nombres')!.touched && getErrorMessage('nombres')" class="text-danger">{{ getErrorMessage('nombres') }}</div>
           </div>
           

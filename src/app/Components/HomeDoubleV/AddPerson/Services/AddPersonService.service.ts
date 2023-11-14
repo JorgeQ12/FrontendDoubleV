@@ -1,15 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { PersonaDTO } from 'src/app/class/personaDTO';
-import { Persona } from 'src/app/interfaces/persona';
-import { ResultResponse } from 'src/app/interfaces/resultresponse';
-import { TipoIdentificacion } from 'src/app/interfaces/tipoidentificacion';
+import { PersonaDTO } from 'src/app/Class/PersonaDTO';
+import { Persona } from 'src/app/Interfaces/Persona';
+import { ResultResponse } from 'src/app/Interfaces/ResultResponse';
+import { TipoIdentificacion } from 'src/app/Interfaces/TipoIdentificacion';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AddPersonService {
+export class AddPersonServiceService {
   private UrlBack = "https://localhost:44359/"
   private apiBack = "api/DoubleV/";
 

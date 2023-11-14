@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LoginUserModule } from './components/loginuser/loginuser.module';
-import { HomeDoubleVModule } from './components/homedoublev/HomeDoubleV.module';
+import { LoginUserModule } from './Components/LoginUser/LoginUser.module';
+import { HomeDoubleVModule } from './Components/HomeDoubleV/HomeDoubleV.module';
 
 @NgModule({
   declarations: [

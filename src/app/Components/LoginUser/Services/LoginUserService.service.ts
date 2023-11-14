@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Usuario } from 'src/app/interfaces/usuario';
-import { UsuarioDTO } from 'src/app/class/usuarioDTO';
-import { ResultResponse } from 'src/app/interfaces/resultresponse';
+import { Usuario } from 'src/app/Interfaces/Usuario';
+import { UsuarioDTO } from 'src/app/Class/UsuarioDTO';
+import { ResultResponse } from 'src/app/Interfaces/ResultResponse';
 
 @Injectable({
   providedIn: 'root'
