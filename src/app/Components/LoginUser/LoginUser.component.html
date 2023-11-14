@@ -13,12 +13,12 @@
         
           <div class="form-group mt-3">
             <label for="password" class="classFormLogin mb-1">Contraseña:</label>
-            <input type="text" id="password" formControlName="password"  placeholder="Ingrese su ontraseña*" class="classInput" required/>
+            <input type="text" id="password" formControlName="password"  placeholder="Ingrese su contraseña*" class="classInput" required/>
             <div *ngIf="loginForm.get('password')!.touched && getErrorMessage('password')" class="text-danger">{{ getErrorMessage('password') }}</div>
           </div>
         
           <div class="text-center mt-3">
-            <button type="submit" class="classButtonLogin">Iniciar sesión</button>
+            <button type="submit" [disabled]="loginForm.invalid" class="classButtonLogin">Iniciar sesión</button>
           </div>
         </form>
       </div>

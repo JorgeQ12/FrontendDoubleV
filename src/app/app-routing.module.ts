@@ -4,10 +4,9 @@ import { LoginUserComponent } from './Components/LoginUser/LoginUser.component';
 import { HomeDoubleVComponent } from './Components/HomeDoubleV/HomeDoubleV.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' }, // Ruta predeterminada redirige a '/login'
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginUserComponent },
-  { path: 'Home', component: HomeDoubleVComponent },
-
+  { path: 'home', component: HomeDoubleVComponent }  
 ];
 
 @NgModule({

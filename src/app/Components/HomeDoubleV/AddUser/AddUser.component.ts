@@ -5,6 +5,7 @@ import { ResultResponse } from 'src/app/Interfaces/ResultResponse';
 import { Usuario } from 'src/app/Interfaces/Usuario';
 import { AddUserServiceService } from './Services/AddUserService.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { EmitObject } from 'src/app/Interfaces/EmitObject';
 
 @Component({
   selector: 'app-AddUser',
@@ -12,7 +13,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./AddUser.component.css']
 })
 export class AddUserComponent implements OnInit {
-  @Output() exitComponentEmitter = new EventEmitter<any>();
+  @Output() exitComponentEmitter = new EventEmitter<EmitObject>();
   saveDataUser!: FormGroup;
   dataUser: UsuarioDTO = { NombreUsuarioDTO: '', ContraseñaDTO: '' };
 
@@ -64,6 +65,6 @@ export class AddUserComponent implements OnInit {
   }
 
   exitComponent(){
-    this.exitComponentEmitter.emit({'user': false})
+    this.exitComponentEmitter.emit({user: false})
   }
 }

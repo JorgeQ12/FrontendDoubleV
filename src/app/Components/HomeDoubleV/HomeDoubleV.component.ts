@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmitObject } from 'src/app/Interfaces/EmitObject';
 @Component({
   selector: 'app-HomeDoubleV',
   templateUrl: './HomeDoubleV.component.html',
@@ -22,7 +23,7 @@ export class HomeDoubleVComponent implements OnInit {
     }
   }
 
-  exitComponent(e: any){
+  exitComponent(e: EmitObject){
     if(!e.person){
       this.isAddPerson = false;
     }

@@ -6,6 +6,7 @@ import { ResultResponse } from 'src/app/Interfaces/ResultResponse';
 import { PersonaDTO } from 'src/app/Class/PersonaDTO';
 import { TipoIdentificacion } from 'src/app/Interfaces/TipoIdentificacion';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { EmitObject } from 'src/app/Interfaces/EmitObject';
 
 @Component({
   selector: 'app-AddPerson',
@@ -13,7 +14,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./AddPerson.component.css'] 
 })
 export class AddPersonComponent implements OnInit {
-  @Output() exitComponentEmitter = new EventEmitter<any>();
+  @Output() exitComponentEmitter = new EventEmitter<EmitObject>();
   saveDataForm!: FormGroup;
   dataPerson: PersonaDTO = {
     NombresDTO: '',
@@ -85,7 +86,7 @@ export class AddPersonComponent implements OnInit {
   }
 
   exitComponent(){
-    this.exitComponentEmitter.emit({'person': false})
+    this.exitComponentEmitter.emit({person: false})
   }
 
   GetTypeDocument()
