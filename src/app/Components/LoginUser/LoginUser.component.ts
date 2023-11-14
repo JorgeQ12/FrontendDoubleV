@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
-import { UsuarioDTO } from 'src/app/Class/UsuarioDTO';
-import {LoginUserService} from 'src/app/Components/LoginUser/Services/LoginUserService.service'
-import { ResultResponse } from 'src/app/Interfaces/ResultResponse';
-import { Usuario } from 'src/app/Interfaces/Usuario';
+import { UsuarioDTO } from 'src/app/class/usuarioDTO';
+import {LoginUserService} from 'src/app/components/loginuser/services/loginuser.service'
+import { ResultResponse } from 'src/app/interfaces/resultresponse';
+import { Usuario } from 'src/app/interfaces/usuario';
 
 @Component({
-  selector: 'app-LoginUser',
-  templateUrl: './LoginUser.component.html',
-  styleUrls: ['./LoginUser.component.css']
+  selector: 'app-loginuser',
+  templateUrl: './loginuser.component.html',
+  styleUrls: ['./loginuser.component.css']
 })
 export class LoginUserComponent implements OnInit {
   loginForm!: FormGroup;

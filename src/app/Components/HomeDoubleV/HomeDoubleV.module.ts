@@ -9,8 +9,8 @@ import { HomeDoubleVComponent } from './HomeDoubleV.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-import { AddPersonComponent } from './AddPerson/AddPerson.component';
-import { AddUserComponent } from './AddUser/AddUser.component';
+import { AddPersonComponent } from './addperson/AddPerson.component';
+import { AddUserComponent } from './adduser/AddUser.component';
 
 
 @NgModule({

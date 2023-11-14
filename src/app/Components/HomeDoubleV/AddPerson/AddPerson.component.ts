@@ -1,16 +1,16 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Persona } from 'src/app/Interfaces/Persona';
-import { AddPersonServiceService } from './Services/AddPersonService.service';
-import { ResultResponse } from 'src/app/Interfaces/ResultResponse';
-import { PersonaDTO } from 'src/app/Class/PersonaDTO';
-import { TipoIdentificacion } from 'src/app/Interfaces/TipoIdentificacion';
+import { Persona } from 'src/app/interfaces/persona';
+import { AddPersonService } from './services/addperson.service';
+import { ResultResponse } from 'src/app/interfaces/resultresponse';
+import { PersonaDTO } from 'src/app/class/personaDTO';
+import { TipoIdentificacion } from 'src/app/interfaces/tipoidentificacion';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-AddPerson',
-  templateUrl: './AddPerson.component.html',
-  styleUrls: ['./AddPerson.component.css'] 
+  selector: 'app-addperson',
+  templateUrl: './addperson.component.html',
+  styleUrls: ['./addperson.component.css'] 
 })
 export class AddPersonComponent implements OnInit {
   @Output() exitComponentEmitter = new EventEmitter<any>();
@@ -24,7 +24,7 @@ export class AddPersonComponent implements OnInit {
     TipoIdentificacionDTO: ''
   };
   typeDocument!: Array<TipoIdentificacion>;
-  constructor(private formBuilder: FormBuilder, private AddPersonService: AddPersonServiceService, private _snackBar: MatSnackBar ) { }
+  constructor(private formBuilder: FormBuilder, private AddPersonService: AddPersonService, private _snackBar: MatSnackBar ) { }
 
   ngOnInit() {
     this.validatorsForms();

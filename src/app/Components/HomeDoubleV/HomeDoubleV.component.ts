@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
-  selector: 'app-HomeDoubleV',
-  templateUrl: './HomeDoubleV.component.html',
-  styleUrls: ['./HomeDoubleV.component.css']
+  selector: 'app-homedoublev',
+  templateUrl: './homeDoublev.component.html',
+  styleUrls: ['./homedoublev.component.css']
 })
 export class HomeDoubleVComponent implements OnInit {
 
